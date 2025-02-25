@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Handwriting';
+    src: url('Handwriting-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Handwriting', sans-serif;
+    background-color: #dff3f3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #a5d5d5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Handwriting', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-family: 'Handwriting', sans-serif;
+}
+
+#about {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#about h2 {
+    font-size: 80px;
+    font-family: 'Handwriting', sans-serif;
+    text-decoration: underline;
+}
+
+#about p {
+    font-size: 30px; 
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+}
+
+.about-image {
+    width: 180px;
+    height: 180px;
+    background-color: #bde0e0;
+    border-radius: 50%;
+}
+
+#works {
+    padding: 40px;
+    text-align: center;
+}
+
+#works h2 {
+    font-size: 90px;
+    font-family: 'Handwriting', sans-serif;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.work-category {
+    margin-bottom: 30px;
+}
+
+.work-category h3 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Handwriting', sans-serif;
+}
+
+.work-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    width: 500px;
+    text-align: center;
+}
+
+.work-item p, .music-item p, .audio-container p, .essay-container p {
+    font-size: 30px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+}
+
+.work-thumbnails img, .animation-video video {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-thumbnails img:hover, .animation-video video:hover {
+    transform: scale(1.1);
+}
+
+.music-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.music-container h3 {
+    font-size: 50px;
+    font-family: 'Handwriting', sans-serif;
+    margin-bottom: 10px;
+}
+
+.audio-container audio {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    display: block;
+}
+
+.essay-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.essay-container h3 {
+    font-size: 50px;
+    font-family: 'Handwriting', sans-serif;
+    margin-bottom: 10px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 40px;
+    color: black;
+    background-color: #a5d5d5;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1.5px solid black;
+    text-align: center;
+    min-width: 300px;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-link:hover {
+    background-color: #a0d6d8;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #a5d5d5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.animation-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
